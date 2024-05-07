@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "6f3e67d3-9b65-4b7f-9f44-0118f57cb166",
+		"name": "PLATFORMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34166898"
+	},
+	"item": [
+		{
+			"name": "platforms",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/platforms",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"platforms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "platforms/{platform}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/platforms/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"platforms",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "platforms/{platform}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/platforms/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"platforms",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "platforms/{platform}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/platforms/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"platforms",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "platforms",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/platforms?name=teste2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"platforms"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "teste2"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
