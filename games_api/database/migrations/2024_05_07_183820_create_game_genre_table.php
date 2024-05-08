@@ -15,11 +15,11 @@ class CreateGameGenreTable extends Migration
     {
         Schema::create('game_genre', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('game_id')->constrained();
-            $table->foreignId('genre_id')->constrained();
+            $table->foreignId('game_id')->constrained()->onDelete('cascade');
+            $table->foreignId('genre_id')->constrained()->onDelete('cascade');
             $table->timestamps();
-  
         });
+
     }
 
     /**

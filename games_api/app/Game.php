@@ -18,12 +18,12 @@ class Game extends Model
 
     public function genres()
     {
-        return $this->belongsToMany('App\Genre');
+        return $this->belongsToMany(Genre::class, 'game_genre');
     }
 
     public function platforms()
     {
-        return $this->belongsToMany('App\Platform');
+        return $this->belongsToMany(Platform::class, 'game_platform');
     }
 
 }

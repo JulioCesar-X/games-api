@@ -83,8 +83,8 @@ class GameController extends Controller
         try {
 
             $game->delete();
-
-            return response()->json(['message' => 'Deleted'], 205);
+            return response()->json(['message' => 'Deleted'], 200);
+            
         } catch (Exception $exception) {
 
             return response()->json(['error' => $exception], 500);
