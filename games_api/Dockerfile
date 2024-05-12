@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     unzip \
     p7zip-full \
-    git
+    git \
+    && rm -rf /var/lib/apt/lists/*
 
 # Instalação da extensão PDO para PostgreSQL
 RUN docker-php-ext-install pdo_pgsql
@@ -31,6 +32,8 @@ RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cac
 
 # Geração da chave de aplicação Laravel
 RUN php artisan key:generate
+
+RUN php artisan config:cache
 
 # Comando padrão para iniciar o servidor PHP
 CMD php artisan serve --host=0.0.0.0 --port=8000
