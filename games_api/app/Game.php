@@ -25,5 +25,14 @@ class Game extends Model
     {
         return $this->belongsToMany(Platform::class, 'game_platform');
     }
+    public function client()
+    {
+        return $this->belongsTo('App\Client');
+    }
+    public function consoles()
+    {
+        return $this->belongsToMany(Console::class, 'game_console');
+    }
+
 
 }

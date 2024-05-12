@@ -1,4 +1,5 @@
 types{
+
     text/html              html htm shtml;
     text/css               css;
     application/javascript js;
@@ -7,4 +8,8 @@ types{
     image/gif              gif;
     image/jpeg             jpeg jpg;
     image/png              png;
+    application/pdf        pdf;
+    application/vnd.openxmlformats-officedocument.spreadsheetml.sheet    xlsx;
+
 }
+
